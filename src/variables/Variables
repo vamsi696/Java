@@ -1,0 +1,207 @@
+Variables are the containers for storing the data values or you can also call it a memory location name for the data. Every variable has a:
+
+Data Type – The kind of data that it can hold. For example, int, string, float, char, etc.
+Variable Name – To identify the variable uniquely within the scope.
+Value – The data assigned to the variable.
+There are three types of variables in Java – Local, Instance, and Static.
+
+Example:
+
+int age = 27;                    // integer variable having value 27
+
+String name = "gfg"     // string variable
+
+How to Declare Java Variables?
+We can declare variables in Java as pictorially depicted below:
+
+Variables in Java
+
+datatype: Type of data that can be stored in this variable.
+data_name: Name was given to the variable.
+In this way, a name can only be given to a memory location. It can be assigned values in two ways:
+
+Variable Initialization
+Assigning value by taking input
+How to Initialize Java Variables?
+It can be perceived with the help of 3 components explained above:
+
+Java Variables Syntax
+
+Example:
+// Declaring float variable
+float simpleInterest;
+
+// Declaring and initializing integer variable
+int time = 10, speed = 20;
+
+// Declaring and initializing character variable
+char var = 'h';
+Variables are the basic units of storage in Java. For a deeper understanding of variable types, scope, and memory management
+Types of Java Variables
+Now let us discuss different types of variables  which are listed as follows:
+
+Local Variables
+Instance Variables
+Static Variables
+Types of Variables in Java
+Let us discuss the traits of every type of variable listed here in detail.
+
+1. Local Variables
+A variable defined within a block or method or constructor is called a local variable.
+
+The Local variable is created at the time of declaration and destroyed after exiting from the block or when the call returns from the function.
+The scope of these variables exists only within the block in which the variables are declared, i.e., we can access these variables only within that block.
+Initialization of the local variable is mandatory before using it in the defined scope.
+
+Example 1:
+// Java Program to show the use of local variables
+import java.io.*;
+class GFG {
+    public static void main(String[] args)
+    {
+        // Declared a Local Variable
+        int var = 10;
+        // This variable is local to this main method only
+        System.out.println("Local Variable: " + var);
+    }
+}
+
+Output
+Local Variable: 10
+
+Example 2:
+
+// Java Program to show the use of
+// Local Variables
+import java.io.*;
+public class GFG {
+    public static void main(String[] args)
+    {
+        // x is a local variable
+        int x = 10;
+        // message is also a local
+        // variable
+        String message = "Hello, world!";
+        System.out.println("x = " + x);
+        System.out.println("message = " + message);
+        if (x > 5) {
+            // result is a
+            // local variable
+            String result = "x is greater than 5";
+            System.out.println(result);
+        }
+        // Uncommenting the line below will result in a
+        // compile-time error System.out.println(result);
+        for (int i = 0; i < 3; i++) {
+            String loopMessage
+                = "Iteration "
+                  + i; // loopMessage is a local variable
+            System.out.println(loopMessage);
+        }
+        // Uncommenting the line below will result in a
+        // compile-time error
+        // System.out.println(loopMessage);
+    }
+}
+
+Output
+x = 10
+
+message = Hello, world!
+x is greater than 5
+Iteration 0
+Iteration 1
+Iteration 2
+2. Instance Variables
+Instance variables are non-static variables and are declared in a class outside of any method, constructor, or block.
+
+As instance variables are declared in a class, these variables are created when an object of the class is created and destroyed when the object is destroyed.
+Unlike local variables, we may use access specifiers for instance variables. If we do not specify any access specifier, then the default access specifier will be used.
+Initialization of an instance variable is not mandatory. Its default value is dependent on the data type of variable. For String it is null, for float it is 0.0f, for int it is 0, for Wrapper classes like Integer it is null, etc.
+Instance variables can be accessed only by creating objects.
+We initialize instance variables using constructors while creating an object. We can also use instance blocks to initialize the instance variables.
+
+Example:
+
+// Java Program to show the use of
+// Instance Variables
+import java.io.*;
+class GFG {
+    // Declared Instance Variable
+    public String geek;
+    public int i;
+    public Integer I;
+    public GFG()
+    {
+        // Default Constructor
+        // initializing Instance Variable
+        this.geek = "Shubham Jain";
+    }
+    // Main Method
+    public static void main(String[] args)
+    {
+        // Object Creation
+        GFG name = new GFG();
+        // Displaying O/P
+        System.out.println("Geek name is: " + name.geek);
+        System.out.println("Default value for int is "+ name.i);
+        // toString() called internally
+        System.out.println("Default value for Integer is "+ name.I);
+    }
+}
+
+Output
+Geek name is: Shubham Jain
+Default value for int is 0
+Default value for Integer is null
+3. Static Variables
+Static variables are also known as class variables.
+
+These variables are declared similarly to instance variables. The difference is that static variables are declared using the static keyword within a class outside of any method, constructor, or block.
+Unlike instance variables, we can only have one copy of a static variable per class, irrespective of how many objects we create.
+Static variables are created at the start of program execution and destroyed automatically when execution ends.
+Initialization of a static variable is not mandatory. Its default value is dependent on the data type of variable. For String it is null, for float it is 0.0f, for int it is 0, for Wrapper classes like Integer it is null, etc.
+If we access a static variable like an instance variable (through an object), the compiler will show a warning message, which won’t halt the program. The compiler will replace the object name with the class name automatically.
+If we access a static variable without the class name, the compiler will automatically append the class name. But for accessing the static variable of a different class, we must mention the class name as 2 different classes might have a static variable with the same name.
+Static variables cannot be declared locally inside an instance method.
+Static blocks can be used to initialize static variables.
+
+Example:
+// Java Program to show the use of
+// Static variables
+import java.io.*;
+class GFG {
+    // Declared static variable
+    public static String geek = "Shubham Jain";
+    public static void main(String[] args)
+    {
+        // geek variable can be accessed without object
+        // creation Displaying O/P GFG.geek --> using the
+        // static variable
+        System.out.println("Geek Name is : " + GFG.geek);
+        // static int c = 0;
+        // above line, when uncommented,
+        // will throw an error as static variables cannot be
+        // declared locally.
+    }
+}
+
+Output
+Geek Name is : Shubham Jain
+Instance Variables vs Static Variables
+Now let us discuss the differences between the Instance variables and the Static variables:
+
+Each object will have its own copy of an instance variable, whereas we can only have one copy of a static variable per class, irrespective of how many objects we create. Thus, static variables are good for memory management.
+Changes made in an instance variable using one object will not be reflected in other objects as each object has its own copy of the instance variable. In the case of a static variable, changes will be reflected in other objects as static variables are common to all objects of a class.
+We can access instance variables through object references, and static variables can be accessed directly using the class name.
+Instance variables are created when an object is created with the use of the keyword ‘new’ and destroyed when the object is destroyed. Static variables are created when the program starts and destroyed when the program stops.
+Syntax: Static and instance variables
+
+class GFG
+{
+    // Static variable
+    static int a;
+
+    // Instance variable
+    int b;
+}
