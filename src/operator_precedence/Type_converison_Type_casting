@@ -1,0 +1,29 @@
+Type conversion and type casting
+In Java, you can change the type of a variable or expression using type conversion and type casting. These techniques let you work with data as if it's a different type, making it easier to do certain tasks that wouldn't be possible with the original types.
+
+Type Conversion: This is also called implicit type conversion or type coercion. It happens automatically when you use different data types in an expression. The compiler changes the data type of one or more operands to make them match before doing the operation.
+
+Example:
+
+int a = 5;
+float b = 2.5f; // note the 'f' suffix to denote a float literal in Java
+float result = a + b; // 'a' is automatically changed to a float before adding.
+System.out.println(result);  // prints 7.5
+Type Casting: This is known as explicit type conversion. You do this manually to change one data type to another. It lets you control the conversion instead of relying on the compiler's default behavior.
+
+Example:
+
+int a = 10;
+int b = 3;
+float result = (float)a / b; // Here, 'a' is explicitly changed to a float before dividing.
+System.out.println(result);  // prints 3.33
+
+public class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        float b = 3.5f; // note the 'f' suffix to denote a float literal in Java
+        int result = (int) (a / b); // cast the result to int
+        System.out.println(result);
+    }
+}
+o/p: 2
