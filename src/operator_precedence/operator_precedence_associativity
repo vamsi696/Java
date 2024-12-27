@@ -1,0 +1,51 @@
+Operator precedence and Associativity
+When figuring out the value of expressions, two important rules are followed: operator precedence and associativity. These rules ensure that expressions are evaluated in a consistent and predictable manner.
+
+Operator Precedence
+Operator precedence means that some operations are done before others when evaluating an expression. Operators with higher precedence are evaluated before those with lower precedence. This concept is similar to the rules of arithmetic, where multiplication and division take precedence over addition and subtraction.
+
+Here's the order of operator precedence in Java, from highest to lowest:
+
+Parentheses: ()
+Postfix operators: ++, --
+Unary operators: +, -, !, ~, ++, --, (type)
+Multiplicative operators: *, /, %
+Additive operators: +, -
+Relational operators: <, >, <=, >=
+Equality operators: ==, !=
+Logical AND operator: &&
+Logical OR operator: ||
+Assignment operators: =, +=, -= ... and so on
+Associativity
+When an expression contains operators of the same precedence level, associativity determines their evaluation order.
+
+Left-Associative: Operators are evaluated from left to right. For instance, in a + b - c, addition and subtraction, being left-associative, will first evaluate a + b, and then subtract c from the result.
+
+Right-Associative: Although less common in C, some operators are right-associative, meaning they are evaluated from right to left. An example is the assignment operator =.
+In a = b = c, c is assigned to b, and then the resulting value of b is assigned to a.
+
+Understanding these principles is crucial for correctly interpreting and writing Java programming expressions.
+
+Task
+What will be the output of the following code?
+
+public class Main {
+    public static void main(String[] args) {
+        int a = 11, b = 5, c = 2;
+        int result = a / b * c;
+        System.out.println(result);
+    }
+}
+
+o/p: 4
+
+What will be the output of the following code?
+
+public class Main {
+    public static void main(String[] args) {
+        int x = 5, y = 3, z = 2;
+        int result = (x > y) && (y <= z) ? 1 : 0;
+        System.out.println(result);
+    }
+}
+o/p: 0
