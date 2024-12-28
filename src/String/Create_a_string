@@ -1,0 +1,6 @@
+Creating a String
+Strings are used for storing text.
+A String variable contains a collection of characters surrounded by double quotes.
+Before declaring a variable as string the String datatype must be used
+
+     for eg - String name = "Chef";
