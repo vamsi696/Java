@@ -1,0 +1,16 @@
+Concatenation
+The '+' sign can be used between strings to add them together to make a new String.
+This is called concatenation.
+For eg -
+
+String x = "Good";
+String y = "Work";
+System.out.println(x + y);
+// output will be: GoodWork
+Note: You can add spaces between words by using an empty " " with a space inside or by providing a space in the end of a word.
+For eg -
+
+String x = "Good";
+String y = "Work";
+System.out.println(x + " " + y);
+// output will be: Good Work

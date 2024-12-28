@@ -1,0 +1,10 @@
+String length
+We can use the length() function to get the length of a string.
+For eg.
+
+String s = "hello";
+int len = s.length();
+System.out.println(len);
+
+// Output
+// 5
