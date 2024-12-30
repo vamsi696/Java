@@ -1,0 +1,27 @@
+Incorrect Conditionals
+Incorrect conditionals are one of the most common types of logical errors, which can be seen while using conditional statements like if-else and loops.
+
+Example
+The code below is supposed to do the following:
+
+If an integer is even, then output True.
+If an integer is odd, then output False.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+
+        if (n % 2 == 0) {
+            System.out.println("false");
+        } else {
+            System.out.println("true");
+        }
+
+        scanner.close();
+    }
+}
+However, the code above is incorrect:
+
+Based on the requirement, if n % 2 == 1, i.e. for odd numbers - we should output false.

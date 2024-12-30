@@ -1,0 +1,13 @@
+Logical Error or Wrong Answer (WA)
+A logical error is an error in a program that occurs when the code compiles and runs without producing any error messages, but it does not produce the expected or desired output.
+Instead, it performs a different computation or provides incorrect results due to a flaw in the algorithm or logic of the program.
+Typically, debugging logical errors requires more effort compared to other types of errors.
+
+They can be categorized into different types:
+
+Incorrect Conditions
+Incorrect Index
+Incorrect variable usage
+
+Which errors are more difficult to solve?
+Logical Errors
