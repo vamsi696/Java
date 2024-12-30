@@ -1,0 +1,13 @@
+Debugging
+This is a good time to learn the basics of Debugging - Debugging is finding and fixing errors or bugs in the source code.
+
+What is a bug ?
+A bug is an error that causes our program to generate an unexpected output that is different from our expected output or no output. What are some of the error codes you saw so far?
+
+CE - Compilation error / Syntax error
+RE - Run-time error
+WA - Wrong answer / Logical error
+TLE - Time limit exceeded
+
+Why is debugging necessary?
+To become good at coding, one must be a great debugger because it is the art of finding the errors inside a code, and one who can find and understand errors can only solve them.

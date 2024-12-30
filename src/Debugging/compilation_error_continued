@@ -1,0 +1,13 @@
+Compilation error continued
+How do you identify the 'Compilation error'?
+
+When you click on Run or Submit - you will get the error description below it.
+For example - in the example below - we are being told by the system that there is an error on Line 4.
+The nature of the error is that a ; was expected.
+
+Status :Compilation error
+
+Main.java:4: error: ';' expected
+        System.out.println(Number)
+                                  ^
+1 error

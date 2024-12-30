@@ -1,0 +1,22 @@
+And Statement
+Till now we used only one condition in our if or else if statements. But what if we want to use multiple conditions? Say we want to check if a person is female and older than 18 years of age, how can we do that in Java?
+
+To achieve that, we have to learn about logical operators.
+
+The && (pronounced "and") keyword is a logical operator that allows you to combine multiple conditions.
+It returns true if all the conditions are true, and false if at least one condition is false.
+
+Let's start with a simple example.
+Suppose you have two variables: x and y. You want to check if both x and y are greater than 5. Here's how you would use the && operator to combine these conditions:
+
+int x = 8;
+int y = 10;
+
+if (x > 5 && y > 5) {
+    System.out.println("Both are greater than 5");
+} else {
+    System.out.println("At least one of them is less than 5");
+}
+
+// Output
+// Both are greater than 5
