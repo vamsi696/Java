@@ -23,7 +23,7 @@ public class Odd_Numbers {
     public static void main (String[] args)
     {
         // Update the code below this line.
-        int i = 11;
+        int i = 10;
         while(i < 20){
             if(i % 2 == 1){
                 System.out.println(i);
