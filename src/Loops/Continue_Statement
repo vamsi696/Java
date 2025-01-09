@@ -1,0 +1,31 @@
+Continue Statement
+Recall that break exit the loop entirely when its condition was met - ignoring all subsequent iterations.
+The continue statement skips one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+Example:
+
+for (int i = 0; i < 10; i++) {
+    if (i % 2 == 0) {
+        continue;
+    }
+    System.out.println(i);
+}
+Output:
+
+1
+3
+5
+7
+9
+In this example, the for loop iterates from
+0
+0 to
+9
+9.
+Inside the loop, there is an 'if' statement that checks if the current number is even (divisible by
+2
+2).
+If the condition is true, the 'continue' statement is executed, and the remaining code block for that iteration is skipped.
+As a result, when an even number is encountered, the 'continue' statement is triggered, and the program jumps back to the beginning of the loop for the next iteration, without executing the 'print' statement.
+Therefore, only the odd numbers in the list will be printed.
+
