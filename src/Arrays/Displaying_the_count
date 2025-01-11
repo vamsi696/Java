@@ -1,0 +1,8 @@
+Displaying the count of elements
+To find the size of an array we use the length property.
+
+String[] chocolate = {"Ferrero Rocher", "Alpenliebe", "Cadbury"};
+System.out.println(chocolate.length);
+
+// Output:
+// 3
