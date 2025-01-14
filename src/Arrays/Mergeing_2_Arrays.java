@@ -30,7 +30,7 @@ public class Mergeing_2_Arrays {
         }
 
         for (int i = 0; i < size1 + size2; i++){
-            System.out.println(thirdArray[i]+ " ");
+            System.out.print(thirdArray[i]+ " ");
         }
     }
 }
