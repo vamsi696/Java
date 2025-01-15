@@ -1,0 +1,26 @@
+Anatomy of a method
+public static void printSquareAndCube(int x)
+{
+    System.out.println(x * x);
+    System.out.println(x * x * x);
+}
+This is the method we saw in last problem. Let us breakdown the structure of a method:
+
+access_modifier return_type method_name(parameters)
+{
+    // Method body (code block)
+    return result;  // Optional return statement
+}
+access_modifier: Specifies the visibility of the method. It can be public, private, protected, or package-private (no modifier).
+
+static A static variable is a class-level variable shared by all objects of the class, meaning it has a single copy that's initialized once and used by everyone.
+
+return_type: The data type of the value that the method returns. void means the method does not return anything.
+
+method_name: Name of the method (should be descriptive and follow Java naming conventions, e.g., camelCase).
+
+parameters: Inputs that the method accepts, enclosed in parentheses. Parameters include their data types and names. In this case int x has integer data type.
+
+Method body: The code block where the function performs its task. This is enclosed in curly braces {}.
+
+return: An optional statement used to return a value from the method. If the method has a return type other than void, you must use return to provide a value of that type.
