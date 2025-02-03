@@ -1,0 +1,73 @@
+Some useful math functions
+In this module - you will solve some practice problems yourself!
+
+Below are some simple math formulae that you will find useful
+
+M
+a
+t
+h
+.
+m
+i
+n
+(
+A
+,
+B
+)
+Math.min(A,B) - Returns the smallest among
+2
+2 integers
+A
+A,
+B
+B
+M
+a
+t
+h
+.
+m
+a
+x
+(
+A
+,
+B
+)
+Math.max(A,B) - Returns the largest among
+2
+2 integers
+A
+A,
+B
+B
+M
+a
+t
+h
+.
+a
+b
+s
+(
+A
+−
+B
+)
+Math.abs(A−B) - Necessarily returns the absolute value of
+(
+A
+−
+B
+)
+(A−B)
+A
+A %
+B
+B - Returns the remainder when
+A
+A is divided by
+B
+B
