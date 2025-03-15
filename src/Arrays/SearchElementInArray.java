@@ -88,17 +88,23 @@ public class SearchElementInArray {
 
             for (int i = 0; i < n; i++){
                 arr[i] = read.nextInt();
-                if (arr[i] == x){
-                    found = true;
-                }
             }
 
-            if (found){
+            if (searchElement(arr, x)){
                 System.out.println("Yes");
             } else {
                 System.out.println("No");
             }
         }
         read.close();
+    }
+
+    private static boolean searchElement(int[]arr, int x){
+            for (int num : arr){
+                if (num == x){
+                    return true;
+                }
+            }
+            return false;
     }
 }
