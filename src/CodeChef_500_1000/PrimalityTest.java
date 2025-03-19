@@ -44,15 +44,22 @@ public class PrimalityTest {
         while (t-- > 0){
             int n = read.nextInt();
 
-            primeNumber(n);
+            if (primeNumber(n)){
+                System.out.println("Yes");
+            } else {
+                System.out.println("No");
+            }
         }
     }
-    public static int primeNumber(int x){
-        if (x%2==1){
-            System.out.println("Yes");
-        } else {
-            System.out.println("No");
+    public static boolean primeNumber(int x){
+        if (x <= 1){
+            return false;
         }
-        return x;
+        for (int i = 2; i * i < x; i++){
+            if (x%i==0){
+                return false;
+            }
+        }
+        return true;
     }
 }
